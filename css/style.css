@@ -1,0 +1,112 @@
+html{
+    height: 100vh;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.chat{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+   background-image: url(./../img/bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: 450px 800px;
+    background-position: center;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    flex-grow: 1;
+}
+
+.buttom{
+    display: flex;
+    padding: 10px;
+    border: 1px solid #cccc;
+     background-color: aliceblue;
+    border-radius: 24px;
+    margin: 10px;
+    
+    
+    
+    
+
+}
+.chat__I{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    align-self: flex-end;
+}
+
+
+.sms{
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffff;
+    max-width: 65%;
+    position: relative;
+}
+
+.chat__bro{
+    margin: 5px;
+    margin-bottom: 5px;
+}
+
+.chat__bro::before{
+    right: 100%;
+    transform: translateX(50%);
+}
+
+.sms::before{
+    widows: 0px;
+    height: 0px;
+    position: absolute;
+    content: "";  
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid #ffff;
+    border-top: 10px solid transparent;
+    border-right: 10px solid transparent;
+    bottom: 0;
+}
+    
+.chat__I::before{
+    left: 100%;
+    transform: translateX(-50%);
+}
+
+.input{
+    padding: 5px;
+    border-radius: 24px;
+    margin-left: 10px;
+    padding-left: 60px;
+    justify-content: flex-start;
+ }
+    
+
+
+.submit{
+    margin-left: 60px;
+     padding: 5px;
+    border-radius: 24px;
+    background-color: floralwhite;
+}
